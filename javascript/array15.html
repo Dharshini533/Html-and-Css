@@ -1,0 +1,27 @@
+<script>
+    let n = parseInt(prompt("Enter number of elements:"));
+    let a = [];
+    
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("Enter element " + (i + 1) + ":"));
+    }
+    
+    document.write("Array: " + a + "<br>");
+    document.write("Leaders in the array are:<br>");
+    
+    for (let i = 0; i < n; i++) {
+        let isLeader = true;
+    
+        for (let j = i + 1; j < n; j++) {
+            if (a[i] <= a[j]) {
+                isLeader = false;
+                break;
+            }
+        }
+    
+        if (isLeader) {
+            document.write(a[i] + "<br>");
+        }
+    }
+    </script>
+    

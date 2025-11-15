@@ -1,0 +1,26 @@
+<script>
+    let n = parseInt(prompt("Enter number of elements in first array:"));
+    let a = [];
+    
+    for (let i = 0; i < n; i++) {
+        a[i] = prompt("Enter string " + (i + 1) + " for first array:");
+    }
+    
+    let m = parseInt(prompt("Enter number of elements in second array:"));
+    let b = [];
+    
+    for (let i = 0; i < m; i++) {
+        b[i] = prompt("Enter string " + (i + 1) + " for second array:");
+    }
+    
+    document.write("Common elements are:<br>");
+    
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < m; j++) {
+            if (a[i] === b[j]) {
+                document.write(a[i] + "<br>");
+            }
+        }
+    }
+    </script>
+    

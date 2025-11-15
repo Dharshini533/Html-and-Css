@@ -1,0 +1,20 @@
+<script>
+    class Common {
+        checkNum(n) {
+            if (n > 100) {
+                document.write(n + " is greater than 100<br>");
+            } else {
+                document.write(n + " is not greater than 100<br>");
+            }
+        }
+    }
+    
+    class A extends Common {}
+    class B extends Common {}
+    
+    let obj1 = new A();
+    let obj2 = new B();
+    obj1.checkNum(150);
+    obj2.checkNum(90);
+    </script>
+    

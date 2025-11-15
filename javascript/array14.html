@@ -1,0 +1,22 @@
+<script>
+    let n = parseInt(prompt("Enter number of elements:"));
+    let a = [];
+    
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("Enter element " + (i + 1) + ":"));
+    }
+    
+   
+    let i;
+    for (i = 0; i < n; i++) {
+        if (a[i] === 0 || a[i] === -1) {
+            document.write("It contains 0 or -1");
+            break;
+        }
+    }
+    
+    if (i === n) {
+        document.write("It does not contain 0 or -1");
+    }
+    </script>
+    

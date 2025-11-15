@@ -1,0 +1,16 @@
+<script>
+    class Common {
+        showList(list) {
+            for (let i = 0; i < list.length; i++) {
+                document.write("Item " + (i + 1) + ": " + list[i] + "<br>");
+            }
+        }
+    }
+    
+    class A extends Common {}
+    class B extends Common {}
+    
+    let obj = new A();
+    obj.showList(["Pen", "Pencil", "Eraser"]);
+    </script>
+    

@@ -1,0 +1,16 @@
+<script>
+    "use strict";
+
+    let octal, decimal = 0, power = 0, r;
+
+    octal = parseInt(prompt("Enter an octal number:"));  
+
+    do {
+        r = octal % 10;  
+        decimal += r * Math.pow(8, power);  
+        power++;
+        octal = parseInt(octal / 10);  
+    }while (octal > 0);
+
+    document.write("Decimal = " + decimal);
+</script>

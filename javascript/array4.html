@@ -1,0 +1,22 @@
+<script>
+let n = parseInt(prompt("Enter number of elements:"));
+let a = [];
+
+for (let i = 0; i < n; i++) {
+    a[i] = parseInt(prompt("Enter element " + (i + 1)));
+}
+
+// Sort the array in descending order using manual swap
+for (let i = 0; i < n; i++) {
+    for (let j = i + 1; j < n; j++) {
+        if (a[i] < a[j]) {  // descending comparison
+            let x = a[i];
+            a[i] = a[j];
+            a[j] = x;
+        }
+    }
+}
+
+document.write("Sorted array (Descending):", a);
+document.write("Second smallest number:", a[n - 2]);
+</script>

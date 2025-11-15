@@ -1,0 +1,25 @@
+<script>
+    "use strict";
+
+    let binary, decimal = 0, octal = "", value = 0, r;
+
+    binary = parseInt(prompt("Enter a binary number:"));  
+
+    
+    let temp = binary;
+    do {
+        r = temp % 10;
+        decimal += r * Math.pow(2, value);
+        temp = parseInt(temp / 10);
+        value++;
+    }while (temp > 0);
+
+    
+    do {
+        r = decimal % 8;
+        octal = r + octal;
+        decimal = parseInt(decimal / 8);
+    }while (decimal > 0);
+
+    document.write(octal);
+</script>

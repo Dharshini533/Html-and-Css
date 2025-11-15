@@ -1,0 +1,19 @@
+<script>
+    "use strict"
+    let amount;
+
+    amount=parseFloat(prompt("Enter x="));
+    if(amount<=10000){
+        tax=amount*0
+        document.write(tax);
+    }
+    else if(10000<amount<=20000){
+        tax=(amount-10000)*10/100
+        document.write(tax);
+    }
+    else{
+        tax=(amount-20000)*20/100+(10000*10/100)
+        document.write(tax);
+    }
+
+</script>

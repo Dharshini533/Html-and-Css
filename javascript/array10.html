@@ -1,0 +1,21 @@
+<script>
+    let n = parseInt(prompt("Enter number of elements in first array:"));
+    let a = [];
+    
+    for (let i = 0; i < n; i++) {
+        a[i] = prompt("Enter string " + (i + 1) + " for first array:");
+    }
+    
+    let m = parseInt(prompt("Enter number of elements in second array:"));
+    let b = [];
+    
+    for (let i = 0; i < m; i++) {
+        b[i] = prompt("Enter string " + (i + 1) + " for second array:");
+    }
+    if(a==b){
+        document.write("equal")
+    }
+    else{
+        document.write("not equal")
+    }
+    

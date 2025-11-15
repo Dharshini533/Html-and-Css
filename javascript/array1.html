@@ -1,0 +1,22 @@
+<script>
+let n = parseInt(prompt("Enter number of elements:"));
+let a = [];
+
+for (let i = 0; i < n; i++) {
+    a[i] = parseInt(prompt("Enter element " + (i + 1)));
+}
+
+
+for (let i = 0; i < n; i++) {
+    for (let j = i + 1; j < n; j++) {
+        if (a[i] > a[j]) {
+            let x = a[i];
+            a[i] = a[j];
+            a[j] = x;
+        }
+    }
+}
+
+document.write("Sorted array:", a);
+document.write("Second largest number:", a[n - 2]);
+</script>

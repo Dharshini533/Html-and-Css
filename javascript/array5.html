@@ -1,0 +1,19 @@
+<script>
+    let n = parseInt(prompt("Enter number of elements:"));
+    let a = [];
+    
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("Enter element " + (i + 1)));
+    }
+    
+    document.write("Duplicate elements:<br>");
+    
+    for (let i = 0; i < n; i++) {
+        for (let j = i + 1; j < n; j++) {
+            if (a[i] === a[j]) {
+                document.write(a[i] + "<br>");
+            }
+        }
+    }
+    </script>
+    

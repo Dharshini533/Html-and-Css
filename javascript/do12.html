@@ -1,0 +1,24 @@
+<script>
+    "use strict";
+
+    let n, i, sum;
+
+    n = parseInt(prompt("Enter a number:"));
+    i = 1;
+    sum = 0;
+
+    
+    do {
+        if (n % i === 0) {
+            sum = sum + i;
+        }
+        i++;
+    } while (i <= n / 2); 
+
+    
+    if (sum === n) {
+        document.write(n + " is a Perfect Number");
+    } else {
+        document.write(n + " is Not a Perfect Number");
+    }
+</script>

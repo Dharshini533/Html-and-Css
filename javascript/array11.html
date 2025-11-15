@@ -1,0 +1,30 @@
+<script>
+let n = parseInt(prompt("Enter number of elements:"));
+let a = [];
+
+for (let i = 0; i < n; i++) {
+    a[i] = parseInt(prompt("Enter element " + (i + 1) + ":"));
+}
+
+
+let result = [];
+let zeroCount = 0;
+
+
+for (let i = 0; i < n; i++) {
+    if (a[i] !== 0) {
+        result.push(a[i]);
+    } else {
+        zeroCount++;
+    }
+}
+
+
+for (let i = 0; i < zeroCount; i++) {
+    result.push(0);
+}
+
+
+document.write("Array after moving 0's to end:<br>");
+document.write(result.join(", "));
+</script>

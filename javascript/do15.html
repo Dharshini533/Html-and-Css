@@ -1,0 +1,30 @@
+<script>
+    "use strict";
+
+    let n, a, s = "";
+    n = parseInt(prompt("Enter a decimal number:"));  
+
+    do{
+        a = n % 16;
+
+        if (a == 10) {
+            s = "A" + s;
+        } else if (a == 11) {
+            s = "B" + s;
+        } else if (a == 12) {
+            s = "C" + s;
+        } else if (a == 13) {
+            s = "D" + s;
+        } else if (a == 14) {
+            s = "E" + s;
+        } else if (a == 15) {
+            s = "F" + s;
+        } else {
+            s = a.toString() + s;
+        }
+
+        n = parseInt(n / 16);
+    }while (n > 0) 
+
+    document.write("Hexadecimal = " + s);
+</script>

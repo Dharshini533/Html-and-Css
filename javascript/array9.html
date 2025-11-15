@@ -1,0 +1,34 @@
+<script>
+    let n = parseInt(prompt("Enter number of elements (only 0s and 1s):"));
+    let a = [];
+    
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("Enter element " + (i + 1) + ":"));
+    }
+    
+    let countZero = 0;
+    
+ 
+    for (let i = 0; i < n; i++) {
+        if (a[i] === 0) {
+            countZero++;
+        }
+    }
+    
+    
+    let result = [];
+    
+    
+    for (let i = 0; i < countZero; i++) {
+        result.push(0);
+    }
+    
+    
+    for (let i = countZero; i < n; i++) {
+        result.push(1);
+    }
+    
+    document.write("Rearranged array:<br>");
+    document.write(result.join(", "));
+    </script>
+    

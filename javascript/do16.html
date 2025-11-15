@@ -1,0 +1,16 @@
+<script>
+    "use strict";
+
+    let n, b_out = 0, value = 0, r;
+
+    n = parseInt(prompt("Enter a binary number:")); // e.g. 1011
+
+    do {
+        r = n % 10; // take last binary digit (0 or 1)
+        b_out = b_out + r * Math.pow(2, value); // convert to decimal
+        n = parseInt(n / 10); // remove last digit
+        value++;
+    } while (n > 0);
+
+    document.write("Decimal equivalent = " + b_out);
+</script>

@@ -1,0 +1,20 @@
+<script>
+    "use strict";
+    let n, temp, r, a;
+
+    n = parseInt(prompt("Enter a number:"));
+    temp = n;
+    r = 0;
+
+    do {
+        a = n % 10;
+        r = r * 10 + a;
+        n = parseInt(n / 10);
+    } while (n > 0);
+
+    if (temp === r) {
+        document.write(temp + " is a Palindrome Number");
+    } else {
+        document.write(temp + " is Not a Palindrome Number");
+    }
+</script>

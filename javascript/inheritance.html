@@ -1,0 +1,27 @@
+<script>
+    let a,b,c,sd;
+    class Addition{
+    constructor(a){
+        this.a=a
+    }
+    add(){
+        this.c=this.a+this.a
+        document.write("sum=",this.c,"<br>")
+    }
+}
+class Subtraction extends Addition{
+    constructor(a,b){
+        super(a);
+        this.b=b;
+    }
+    sub(){
+        this.c=this.a-this.b
+        document.write("sub=",this.c)
+    }
+}
+a=45;
+b=56;
+sd= new Subtraction(a,b)
+sd.add()
+sd.sub()
+</script>

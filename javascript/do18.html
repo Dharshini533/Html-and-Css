@@ -1,0 +1,41 @@
+<script>
+    "use strict";
+
+    let binary, decimal = 0, hex = "", value = 0, r;
+
+    binary = parseInt(prompt("Enter a binary number:"));  
+
+    
+    let temp = binary;
+    do {
+        r = temp % 10;
+        decimal += r * Math.pow(2, value);
+        temp = parseInt(temp / 10);
+        value++;
+    }while (temp > 0); 
+
+    
+    do {
+        let a = decimal % 16;
+
+        if (a == 10) {
+            hex = "A" + hex;
+        } else if (a == 11) {
+            hex = "B" + hex;
+        } else if (a == 12) {
+            hex = "C" + hex;
+        } else if (a == 13) {
+            hex = "D" + hex;
+        } else if (a == 14) {
+            hex = "E" + hex;
+        } else if (a == 15) {
+            hex = "F" + hex;
+        } else {
+            hex = a.toString() + hex;
+        }
+
+        decimal = parseInt(decimal / 16);
+    }while (decimal > 0);
+
+    document.write( hex);
+</script>

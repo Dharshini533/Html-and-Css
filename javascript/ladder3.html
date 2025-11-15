@@ -1,0 +1,25 @@
+<script>
+    "use strict"
+    let sal;
+
+    sal=parseFloat(prompt("Enter x="));
+    if(0<=sal<=10000){
+        hra=sal*20/100
+        da=sal*80/100
+        document.write(hra+"<br>"+da);
+    }
+    else if(10000<sal<=20000){
+        hra=sal*25/100
+        da=sal*90/100
+        document.write(hra+"<br>"+da);
+    }
+    else{
+        hra=sal*30/100
+        da=sal*95/100
+        document.write(hra+"<br>"+da);
+    }
+    gp=sal+hra+da
+    document.write(gp);
+
+
+</script>

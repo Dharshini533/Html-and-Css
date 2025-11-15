@@ -1,0 +1,29 @@
+<script>
+    "use strict";
+    let n, temp, power,count;
+
+    n = parseInt(prompt("Enter a number:"));
+    temp = n;
+
+
+    count = 0
+    do{
+        count++
+        n=parseInt(n/10)
+    }while(n>0);
+    n = temp;
+    power=0
+
+    
+    do {
+        power=power+(Math.pow(n%10,count))
+        n=parseInt(n/10)
+    } while (n > 0);
+
+    
+    if (power=== temp) {
+        document.write(temp + " is an Armstrong Number");
+    } else {
+        document.write(temp + " is Not an Armstrong Number");
+    }
+</script>

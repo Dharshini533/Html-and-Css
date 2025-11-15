@@ -1,0 +1,37 @@
+<script>
+    "use strict";
+
+    let hex, i, a, power = 0, decimal = 0;
+
+    hex = prompt("Enter a hexadecimal number:");  
+   
+
+    i = hex.length - 1;
+
+    while (i >= 0) {
+        
+
+        
+        if (hex[i]== "a") {
+            a = 10;
+        } else if (hex[i] == "b") {
+            a = 11;
+        } else if (hex[i] == "c") {
+            a = 12;
+        } else if (hex[i] == "d") {
+            a = 13;
+        } else if (hex[i] == "e") {
+            a = 14;
+        } else if (hex[i] == "f") {
+            a = 15;
+        } else {
+            a = parseInt(chex[i]); 
+        }
+
+        decimal = decimal + a * Math.pow(16, power);
+        power++;
+        i--;
+    }
+
+    document.write(decimal);
+</script>

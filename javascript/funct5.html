@@ -1,0 +1,15 @@
+<script>
+    "use strict";
+    function createPattern() {
+        let i, j;
+        let str = "";
+        for (i = 1; i <= 3; i++) {
+            for (j = 1; j <= i; j++) {
+                str += "*";
+            }
+            str += "<br>";
+        }
+        return str;
+    }
+    document.write(createPattern());
+</script>   

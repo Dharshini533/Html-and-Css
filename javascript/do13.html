@@ -1,0 +1,17 @@
+<script>
+    "use strict";
+
+    let n,b_out,value;
+
+    n = parseInt(prompt("Enter a number:"));
+    b_out=0
+    value=0
+    do{
+        r=n%2
+        b_out=b_out+r*(Math.pow(10,value))
+        n=parseInt(n/2)
+        value++
+
+    }while (n>0);
+
+</script>

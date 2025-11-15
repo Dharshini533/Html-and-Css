@@ -1,0 +1,23 @@
+<script>
+    let n = parseInt(prompt("Enter number of elements:"));
+    let a = [];
+    let even = 0;
+    let odd = 0;
+    
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("Enter element " + (i + 1) + ":"));
+    }
+    
+    for (let i = 0; i < n; i++) {
+        if (a[i] % 2 === 0) {
+            even++;
+        } else {
+            odd++;
+        }
+    }
+    
+    document.write("Array entered: " + a + "<br><br>");
+    document.write("Number of even elements: " + even + "<br>");
+    document.write("Number of odd elements: " + odd);
+    </script>
+    
