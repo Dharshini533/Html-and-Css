@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+    <style>
+        table,tr,td,th{
+            border: 3px solid;
+            height: 50px;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        .a{
+            background-color: rgb(9, 197, 240);
+            text-align: center;
+        }
+        .b{
+            background-color: rgb(45, 149, 45);
+            text-align: center;
+        }
+        .c{
+            background-color: rgb(170, 170, 17);
+            text-align: center;
+        }
+        .d{
+            background-color: rgba(152, 25, 25, 0.542);
+            text-align: center;
+        }
+        .e{
+            background-color: rgba(128, 128, 128, 0.915);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td rowspan="2" class="a">No</td>
+            <td class="a">problems</td>
+            <td class="a">for</td>
+            <td class="a">a web</td>
+        </tr>
+        <tr>
+            <td class="b">professional</td>
+            <td rowspan="3" colspan="2" class="b">as</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="c">you</td>
+        </tr>
+        <tr>
+            <td class="d">will</td>
+            <td rowspan="2" class="d">see</td>
+        </tr>
+        <tr>
+            <td class="e">in</td>
+            <td class="e">a few</td>
+            <td class="e">minutes!</td>
+        </tr>   
+    </table>
+    
+</body>
+</html>
